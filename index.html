@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Brewery Search</title>
+  <link rel="stylesheet" href="styles.css">
+  <h1>Brewery Sites</h1>
+</head>
+<body>
+    
+    <p> Search breweries in town of your choice. It will display the list of breweries
+        based on the type. Then choose the brewery you want more information on. It 
+        will display the physical address and link to their websites. 
+    <br>
+    <img src="sampler.jpg" alt="beer-sampler" width="140" height="145">
+    <img src="alpine.jpg" alt="eh-ph" width="140" height="145">
+    </p>
+    <script src="Project5REST.js"></script>
+    <div>
+     
+        <label for="city">Choose a city:</label>
+        <select id="city" name="city">
+        <option value="san_diego">San Diego</option>
+        <option value="denver">Denver</option>
+        <option value="san_francisco">San Francisco</option>
+        <option value="boston">Boston</option>
+        <option value="los_angeles">Los Angeles</option>
+        <option value="chicago">Chicago</option>
+        <option value="stowe">Stowe</option>
+        <option value="austin">Austin</option>
+        </select>
+        <br>
+        <label for="">Type of brewery:</label>
+        <select id="type" name="type">
+        <option value="micro">Microbrewery</option>
+        <option value="brewpub">Brewpub</option>
+        <option value="regional">Medium-Sized</option>
+        
+        </select>
+  
+        <br>
+        
+    </div>
+    <h2>
+        <button onclick=getBreweries() type="submit">View Breweries</button> 
+        <br>
+        <img src="abnormal.jpg" alt="flights" width="180" height="165">
+        <div id="breweries"></div>
+    </h2>
+        <label for="choice">Brewery:</label>
+        <input type="number" id="choice" name='choice'>
+        <button onclick="getInfo()" type="submit">More Info</button>
+    <h3>
+        <div id="myBrewery"></div>
+    </h3>
+  
+</body>
+</html>
